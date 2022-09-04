@@ -1,4 +1,5 @@
 alias developer='cd $DEVELOPER'
+alias learning='cd $DEVELOPER/Learning'
 alias bashProfile='vim ~/.bash_profile'
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
