@@ -1,0 +1,30 @@
+[core]
+	excludesfile = /Users/sebastian/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = stleye
+	email = stleye@gmail.com
+[alias]
+	skip = update-index --skip-worktree
+	noskip = update-index --no-skip-worktree
+	skipped = !git ls-files -v | grep "^S"
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[pull]
+	rebase = true
+[diff]
+	colorMoved = zebra
+[push]
+	default = current
+[commit]
+	template = /Users/sebastian/.stCommitMsg
+[credential]
+	helper = osxkeychain
