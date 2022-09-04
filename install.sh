@@ -1,6 +1,7 @@
 
 rm $HOME/.alias.sh
-rm $HOME/bash_profile
+rm $HOME/.bash_profile
+rm $HOME/.gitconfig
 rm $HOME/.exports.sh
 rm $HOME/.functions.sh
 rm $HOME/.fzf.bash
