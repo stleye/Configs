@@ -6,8 +6,8 @@ fi
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "$PATH/configs/completion.bash" 2> /dev/null
+[[ $- == *i* ]] && source "$HOME/configs/completion.bash" 2> /dev/null
 
 # Key bindings
 # ------------
-source "$PATH/configs/key-bindings.bash"
+source "$HOME/configs/key-bindings.bash"
