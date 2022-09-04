@@ -1,3 +1,18 @@
+
+rm $HOME/.alias.sh
+rm $HOME/bash_profile
+rm $HOME/.exports.sh
+rm $HOME/.functions.sh
+rm $HOME/.fzf.bash
+rm $HOME/.fzf.zsh
+rm $HOME/.git-completion.bash
+rm $HOME/.git-prompt.sh
+rm $HOME/.ovloop.sh
+rm $HOME/.tmux.conf
+rm $HOME/.vimrc
+rm $HOME/.vim
+
+
 ln -s $HOME/configs/.alias.sh $HOME/.alias.sh
 ln -s $HOME/configs/.bash_profile $HOME/.bash_profile
 ln -s $HOME/configs/.exports.sh $HOME/.exports.sh

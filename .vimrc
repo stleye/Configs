@@ -5,10 +5,15 @@ set tabstop=4
 set shiftwidth=4
 "set autoindent"
 set smartindent
+set cursorline
 set mouse=a
+set ignorecase
+set encoding=utf-8
 set bg=dark
 
 colorscheme gruvbox 
+
+so $HOME/configs/.vim/plugins.vim
 
 let mapleader = ','
 
@@ -23,17 +28,6 @@ autocmd TextChanged,TextChangedI <buffer> silent write
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 
-call plug#begin()
-Plug 'preservim/NERDTree'
-Plug 'mattn/emmet-vim'
-Plug 'morhetz/gruvbox'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'neovim/nvim-lspconfig'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'myhere/vim-nodejs-complete'
-"Plug 'chrisbra/vim-commentary'
-call plug#end()
 
 nnoremap <c-p> :Files<CR> 
 nnoremap <leader>n :NERDTreeFocus<CR>
