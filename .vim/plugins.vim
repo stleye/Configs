@@ -14,11 +14,5 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'neovim/nvim-lspconfig'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-Plug 'Yggdroot/indentLine'
-
-"Plug 'myhere/vim-nodejs-complete'
-"Plug 'chrisbra/vim-commentary'
 "
 call plug#end()
