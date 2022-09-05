@@ -13,7 +13,7 @@ set bg=dark
 
 colorscheme gruvbox 
 
-so $HOME/configs/.vim/plugins.vim
-so $HOME/configs/.vim/maps.vim
-so $HOME/configs/.vim/plugin-conf.vim
+so $HOME/configs/vim/plugins.vim
+so $HOME/configs/vim/maps.vim
+so $HOME/configs/vim/plugin-conf.vim
 
