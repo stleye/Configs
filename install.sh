@@ -27,5 +27,6 @@ ln -s $HOME/configs/.ovloop.sh $HOME/.ovloop.sh
 ln -s $HOME/configs/.tmux.conf $HOME/.tmux.conf
 ln -s $HOME/configs/.vimrc $HOME/.vimrc
 ln -s $HOME/configs/.vim $HOME/.vim
+ln -s $HOME/configs/nvim/init.vim $HOME/.config/nvim/init.vim
 
 source ~/.bash_profile
