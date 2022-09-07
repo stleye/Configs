@@ -12,6 +12,7 @@ alias c='clear'                             # c:            Clear terminal displ
 alias show_options='shopt'                  # Show_options: display bash options settings
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+alias vim="nvim"
 #   lr:  Full Recursive Directory Listing
 #   ------------------------------------------
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'

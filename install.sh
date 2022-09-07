@@ -6,10 +6,7 @@ rm $HOME/.exports.sh
 rm $HOME/.functions.sh
 rm $HOME/.fzf.bash
 rm $HOME/.fzf.zsh
-rm $HOME/.git-completion.bash
-rm $HOME/.git-prompt.sh
 rm $HOME/.ovloop.sh
-rm $HOME/.tmux.conf
 rm $HOME/.vimrc
 rm $HOME/.vim
 
@@ -24,7 +21,6 @@ ln -s $HOME/configs/git-completion.bash $HOME/.git-completion.bash
 ln -s $HOME/configs/git-prompt.sh $HOME/.git-prompt.sh
 ln -s $HOME/configs/gitconfig $HOME/.gitconfig
 ln -s $HOME/configs/ovloop.sh $HOME/.ovloop.sh
-ln -s $HOME/configs/tmux.conf $HOME/.tmux.conf
 ln -s $HOME/configs/vimrc $HOME/.vimrc
 ln -s $HOME/configs/vim $HOME/.vim
 ln -s $HOME/configs/nvim/init.vim $HOME/.config/nvim/init.vim
