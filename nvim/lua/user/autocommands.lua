@@ -9,6 +9,18 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
+-- vim.api.nvim_create_autocmd({ "FileType" }, {
+--   pattern = { "Podfile", "podspec" },
+--   callback = function()
+--     vim.cmd "set relativenumber"
+--     -- vim.cmd [[
+--     -- ]]
+--   end,
+-- })
+
+vim.cmd('autocmd BufRead,BufNewFile *.podspec set filetype=ruby')
+vim.cmd('autocmd BufRead,BufNewFile Podfile   set filetype=ruby')
+
 -- Remove statusline and tabline when in Alpha
 vim.api.nvim_create_autocmd({ "User" }, {
   pattern = { "AlphaReady" },
