@@ -17,6 +17,8 @@ ln -sF $CONFIG/zshrc $HOME/.zshrc
 ln -sF $CONFIG/alias.sh $HOME/.alias.sh
 ln -sF $CONFIG/bash_profile $HOME/.bash_profile
 ln -sF $CONFIG/exports.sh $HOME/.exports.sh
+ln -sF $CONFIG/fzf.zsh $HOME/.fzf.zsh
+ln -sF $CONFIG/fzf.bash $HOME/.fzf.bash
 ln -sF $CONFIG/gitconfig $HOME/.gitconfig
 ln -sF $CONFIG/ovloop.sh $HOME/.ovloop.sh
 ln -sF $CONFIG/antigen.zsh $HOME/.antigen.zsh
