@@ -1,5 +1,6 @@
 [core]
 	excludesfile = /Users/sebastian/.gitignore_global
+	editor = nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -22,9 +23,14 @@
 	rebase = true
 [diff]
 	colorMoved = zebra
+	tool = vimdiff
 [push]
 	default = current
 [commit]
 	template = /Users/sebastian/.stCommitMsg
 [credential]
 	helper = osxkeychain
+[pager]
+	branch = false
+[difftool]
+	prompt = false

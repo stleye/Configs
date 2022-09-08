@@ -24,4 +24,3 @@ ln -sF $CONFIG/nvim $HOME/.config/nvim
 ln -sF $CONFIG/functions.sh $HOME/.functions.sh
 
 source ~/.bash_profile
-#source ~/.zshrc
