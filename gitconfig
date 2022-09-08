@@ -4,6 +4,7 @@
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+  trustExitCode = true
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -23,7 +24,7 @@
 	rebase = true
 [diff]
 	colorMoved = zebra
-	tool = vimdiff
+	external = git_diff_wrapper
 [push]
 	default = current
 [commit]
@@ -32,5 +33,6 @@
 	helper = osxkeychain
 [pager]
 	branch = false
+	diff = false
 [difftool]
 	prompt = false
