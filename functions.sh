@@ -8,6 +8,8 @@ function gch() {
 	git branch | grep -E $1 | xargs git checkout 
 }
 
+killFromList () { ps | fzf | awk {'print $1'} | xargs kill }
+
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
 trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
 

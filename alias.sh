@@ -1,5 +1,7 @@
 alias developer='cd $DEVELOPER'
-alias learning='cd $DEVELOPER/Learning'
+alias learning='cd $LEARNING'
+alias nodejs='cd $NODEJS'
+alias react='cd $REACT'
 alias bashProfile='vim ~/.bash_profile'
 alias config='cd ~/configs'
 alias cp='cp -iv'                           # Preferred 'cp' implementation
