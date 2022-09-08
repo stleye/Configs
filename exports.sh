@@ -8,3 +8,5 @@ export CONFIG=~/.config/custom
 export LEARNING=$DEVELOPER/Learning
 export NODEJS=$LEARNING/Node.js
 export REACT=$LEARNING/React
+
+export PATH=$CONFIG/bin:$PATH
