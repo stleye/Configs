@@ -25,4 +25,6 @@ ln -sF $CONFIG/antigen.zsh $HOME/.antigen.zsh
 ln -sF $CONFIG/nvim $HOME/.config/nvim
 ln -sF $CONFIG/functions.sh $HOME/.functions.sh
 
+cp -R -p $CONFIG/git_diff_wrapper /usr/local/bin
+
 source ~/.bash_profile
