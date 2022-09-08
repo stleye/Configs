@@ -1,26 +1,26 @@
 
-rm $HOME/.alias.sh
-rm $HOME/.bash_profile
-rm $HOME/.gitconfig
-rm $HOME/.exports.sh
-rm $HOME/.functions.sh
-rm $HOME/.fzf.bash
-rm $HOME/.fzf.zsh
-rm $HOME/.ovloop.sh
-rm $HOME/.vimrc
-rm $HOME/.vim
+rm -f $HOME/.alias.sh
+rm -f $HOME/.bash_profile
+rm -f $HOME/.gitconfig
+rm -f $HOME/.exports.sh
+rm -f $HOME/.functions.sh
+rm -f $HOME/.fzf.bash
+rm -f $HOME/.fzf.zsh
+rm -f $HOME/.ovloop.sh
+rm -f $HOME/.vimrc
+rm -f $HOME/.vim
 
-ln -s $HOME/configs/alias.sh $HOME/.alias.sh
-ln -s $HOME/configs/bash_profile $HOME/.bash_profile
-ln -s $HOME/configs/exports.sh $HOME/.exports.sh
-ln -s $HOME/configs/functions.sh $HOME/.functions.sh
-ln -s $HOME/configs/git-completion.bash $HOME/.git-completion.bash
-ln -s $HOME/configs/git-prompt.sh $HOME/.git-prompt.sh
-ln -s $HOME/configs/gitconfig $HOME/.gitconfig
-ln -s $HOME/configs/ovloop.sh $HOME/.ovloop.sh
-ln -s $HOME/configs/vimrc $HOME/.vimrc
-ln -s $HOME/configs/vim $HOME/.vim
-ln -s $HOME/configs/nvim/init.vim $HOME/.config/nvim/init.vim
-ln -s $HOME/configs/nvim nvim
+mkdir -p $HOME/.config/custom #Create directory only if it doesn't exist
+export CONFIG=$HOME/.config/custom
+
+ln -sF $CONFIG/alias.sh $HOME/.alias.sh
+ln -sF $CONFIG/bash_profile $HOME/.bash_profile
+ln -sF $CONFIG/exports.sh $HOME/.exports.sh
+ln -sF $CONFIG/gitconfig $HOME/.gitconfig
+ln -sF $CONFIG/ovloop.sh $HOME/.ovloop.sh
+ln -sF $CONFIG/vimrc $HOME/.vimrc
+ln -sF $CONFIG/vim $HOME/.vim
+ln -sF $CONFIG/nvim $HOME/.config/nvim
+ln -sF $CONFIG/functions.sh $HOME/.functions.sh
 
 source ~/.bash_profile
