@@ -1,11 +1,9 @@
 function gbD() {
-	for BRANCH in $(git branch | grep -E $1); do
-		git branch -D $BRANCH
-	done
+  git branch | fzf | xargs git branch -D 
 }
 
 function gch() {
-	git branch | grep -E $1 | xargs git checkout 
+  git branch | fzf | xargs git checkout 
 }
 
 killFromList () { ps | fzf | awk {'print $1'} | xargs kill; }
