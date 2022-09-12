@@ -13,16 +13,16 @@ rm -f $HOME/.antigen.zsh
 mkdir -p $HOME/.config/custom #Create directory only if it doesn't exist
 export CONFIG=$HOME/.config/custom
 
-cp -R -u -p zshrc $CONFIG
-cp -R -u -p alias.sh $CONFIG
-cp -R -u -p bash_profile $CONFIG
-cp -R -u -p exports.sh $CONFIG
-cp -R -u -p fzf.zsh $CONFIG
-cp -R -u -p fzf.bash $CONFIG
-cp -R -u -p gitconfig $CONFIG
-cp -R -u -p ovloop.sh $CONFIG
-cp -R -u -p antigen.zsh $CONFIG
-cp -R -u -p functions.sh $CONFIG
+cp -R -p zshrc $CONFIG
+cp -R -p alias.sh $CONFIG
+cp -R -p bash_profile $CONFIG
+cp -R -p exports.sh $CONFIG
+cp -R -p fzf.zsh $CONFIG
+cp -R -p fzf.bash $CONFIG
+cp -R -p gitconfig $CONFIG
+cp -R -p ovloop.sh $CONFIG
+cp -R -p antigen.zsh $CONFIG
+cp -R -p functions.sh $CONFIG
 cp -R -o $CONFIG/git_diff_wrapper /usr/local/bin
 cp -r nvim $CONFIG
 
