@@ -23,7 +23,7 @@ cp -R -p gitconfig $CONFIG
 cp -R -p ovloop.sh $CONFIG
 cp -R -p antigen.zsh $CONFIG
 cp -R -p functions.sh $CONFIG
-cp -R -o $CONFIG/git_diff_wrapper /usr/local/bin
+cp -R $CONFIG/git_diff_wrapper /usr/local/bin
 cp -r nvim $CONFIG
 
 ln -sF $CONFIG/zshrc $HOME/.zshrc
