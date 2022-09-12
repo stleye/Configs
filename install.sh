@@ -14,16 +14,16 @@ mkdir -p $HOME/.config/custom #Create directory only if it doesn't exist
 export CONFIG=$HOME/.config/custom
 
 cp -R zshrc $CONFIG
-cp -R alias $CONFIG
+cp -R alias.sh $CONFIG
 cp -R bash_profile $CONFIG
-cp -R exports $CONFIG
+cp -R exports.sh $CONFIG
 cp -R fzf.zsh $CONFIG
 cp -R fzf.bash $CONFIG
 cp -R gitconfig $CONFIG
 cp -R ovloop.sh $CONFIG
 cp -R antigen.zsh $CONFIG
 cp -r nvim $CONFIG
-cp -R functions $CONFIG
+cp -R functions.sh $CONFIG
 cp -R -o $CONFIG/git_diff_wrapper /usr/local/bin
 
 ln -sF $CONFIG/zshrc $HOME/.zshrc
