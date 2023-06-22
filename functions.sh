@@ -6,6 +6,10 @@ function gch() {
   git branch | fzf | xargs git checkout 
 }
 
+function gme() {
+  git branch | fzf | xargs -I % sh -c 'git merge origin/%'
+}
+
 killFromList () { ps | fzf | awk {'print $1'} | xargs kill; }
 
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside

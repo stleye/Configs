@@ -7,6 +7,7 @@ rm -f $HOME/.functions.sh
 rm -f $HOME/.fzf.bash
 rm -f $HOME/.fzf.zsh
 rm -f $HOME/.ovloop.sh
+rm -f $HOME/.ovloop.py
 rm -f $HOME/.zshrc
 rm -f $HOME/.antigen.zsh
 
@@ -21,6 +22,7 @@ cp -R -p fzf.zsh $CONFIG
 cp -R -p fzf.bash $CONFIG
 cp -R -p gitconfig $CONFIG
 cp -R -p ovloop.sh $CONFIG
+cp -R -p ovloop.py $CONFIG
 cp -R -p antigen.zsh $CONFIG
 cp -R -p functions.sh $CONFIG
 cp -R -p bin/git_diff_wrapper /usr/local/bin
@@ -34,6 +36,7 @@ ln -sF $CONFIG/fzf.zsh $HOME/.fzf.zsh
 ln -sF $CONFIG/fzf.bash $HOME/.fzf.bash
 ln -sF $CONFIG/gitconfig $HOME/.gitconfig
 ln -sF $CONFIG/ovloop.sh $HOME/.ovloop.sh
+ln -sF $CONFIG/ovloop.py $HOME/.ovloop.py
 ln -sF $CONFIG/antigen.zsh $HOME/.antigen.zsh
 ln -sF $CONFIG/nvim $HOME/.config/nvim
 ln -sF $CONFIG/functions.sh $HOME/.functions.sh

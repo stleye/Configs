@@ -16,6 +16,7 @@ alias show_options='shopt'                  # Show_options: display bash options
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 alias vim="nvim"
+alias exa="exa --long --header --git --icons"
 #   lr:  Full Recursive Directory Listing
 #   ------------------------------------------
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
@@ -28,4 +29,3 @@ alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open
 alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
 alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
 
-alias kali='ssh kali@192.168.1.136'

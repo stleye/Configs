@@ -1,43 +1,11 @@
-[core]
-	excludesfile = /Users/sebastian/.gitignore_global
-	editor = nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
-  trustExitCode = true
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[core]
+	pager = less -F -X
 [user]
-	name = stleye
-	email = stleye@gmail.com
-[alias]
-	skip = update-index --skip-worktree
-	noskip = update-index --no-skip-worktree
-	skipped = !git ls-files -v | grep "^S"
-[filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-[pull]
-	rebase = true
-[diff]
-	colorMoved = zebra
-	external = git_diff_wrapper
-[push]
-	default = current
-[commit]
-	template = /Users/sebastian/.stCommitMsg
-[credential]
-	helper = osxkeychain
-[pager]
-	branch = false
-	diff = false
-[difftool]
-	prompt = false
-[merge]
-	tool = vimdiff
-	conflictstyle = diff3
-[mergetool]
-	prompt = false
+	name = Sebastian Tleye
+	email = stleye@ovloop.com
