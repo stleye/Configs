@@ -22,4 +22,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PS1="\h:\w $ "
+#export PS1="\h:\w $ "

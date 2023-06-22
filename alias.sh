@@ -7,8 +7,9 @@ alias config='cd $CONFIG'
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
+alias exa="exa --long --header --git --icons"
 alias ls='ls -lGp'
-alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
+alias ll='exa --long --header --git --icons'
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
@@ -16,7 +17,6 @@ alias show_options='shopt'                  # Show_options: display bash options
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 alias vim="nvim"
-alias exa="exa --long --header --git --icons"
 #   lr:  Full Recursive Directory Listing
 #   ------------------------------------------
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
